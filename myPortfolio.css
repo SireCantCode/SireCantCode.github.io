@@ -4,6 +4,16 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+:root{
+    --black: rgb(27, 28, 27);
+    --white: #eee;
+    --mainColor: #ede8a2;
+    --colorPop: rgb(30, 134, 213);
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 #about{
     display: flex;
@@ -12,19 +22,19 @@
     align-items: center;
     background-image: url("https://images.pexels.com/photos/7148542/pexels-photo-7148542.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     background-repeat: no-repeat;
-    background-size: cover;color: white;
+    background-size: cover;color: var(--white);
     height: 100vh;
 }
 
 #about p{
-    color: rgb(255, 255, 255);
+    color: var(--white);
     font-size: 20px;
     padding: 20px;
 }
 
 footer{
-    background: rgb(98, 98, 190);
-    color: white;
+    background: var(--black);
+    color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +46,7 @@ footer{
     display: flex;
     flex-flow:row wrap;
     justify-content: center;
-    background-color: #eee;
+    background-color: var(--black);
     position: fixed;
     left: 0;
     top: 0;
@@ -44,10 +54,12 @@ footer{
     padding: 15px;
     word-spacing: 15px;
     overflow: hidden;
+
+    
 }
 
 #myLinks a{
-    color: rgb(98, 98, 190);
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -60,10 +72,10 @@ footer{
     width: 100%;
     height: 100vh;
     background-color: rgba(44, 45, 46,0.3);
-    background-image: url("https://wallpaperaccess.com/full/796839.jpg"),linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-image: url("https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: var(--white);
     text-align: center;
     
     
@@ -71,15 +83,25 @@ footer{
 
 #welcome-section h1{
     font-size: 48px;
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+#welcome-section h2{
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--white);
 }
 
 
 
 #projects{
-    background: #eee;
+    background: var(--white);
     padding: 20px;
-    color: rgb(98, 98, 190);
+
+}
+
+#projects h1{
+    color: var(--colorPop);
 }
 
 .project-container{
@@ -91,9 +113,15 @@ footer{
 }
 
 .project-container p{
-    color: rgb(98, 98, 190);
+    color: var(--colorPop);
     font-weight: bold;
-    font-size: 22px;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+.project-container p:hover{
+    transform: scaleY(1.2);
 
 }
 
@@ -146,7 +174,7 @@ footer{
 }
 
 .contactLinks a{
-    color: white;
+    color: var(--white);
     text-decoration: none;
     padding: 10px;
   
@@ -174,12 +202,12 @@ footer{
     #navbar{
         display: flex;
         justify-content: flex-end;
-        background-color: #eee;
+        background-color: var(--black);
         position: fixed;
         left: 0;
         top: 0;
         width: 100%;
-        padding: 15px;
+        padding: 16px;
         overflow: hidden;
         word-spacing: 15px;
     }
@@ -218,5 +246,7 @@ footer{
         flex-flow: row wrap;
         justify-content: center;
     }
+
+    
     
 }
