@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Crimson Text', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 :root{
     --black: rgb(27, 28, 27);
@@ -116,12 +118,12 @@ footer{
     color: var(--colorPop);
     font-weight: bold;
     font-size: 2rem;
-    padding: 1rem;
+    margin: 1rem;
 
 }
 
 .project-container p:hover{
-    transform: scaleY(1.2);
+    transform: scale(1.2,1.2);
 
 }
 
